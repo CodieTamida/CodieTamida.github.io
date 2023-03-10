@@ -1,0 +1,87 @@
+body {
+  background-color: rgb(215, 189, 226);
+  margin: 0;
+}
+
+header {
+  margin-left: 10%;
+  background-color: rgb(215, 189, 226);
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  border: 5px solid black;
+  text-align: center;
+  font-size: 50px;
+}
+div {
+  background-image: url("PR_recipe.txt");
+}
+
+h1 {
+  margin-left: 10%;
+  text-align: center;
+}
+
+.flex-container {
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+[flex-child] {
+  display: flex;
+  background-size: contain;
+
+  flex: 1;
+}
+
+#first-ID {
+  color: magenta;
+}
+
+.a:hover {
+  border: 5px dashed rgb(82, 185, 240);
+}
+
+img {
+  aspect-ratio: 4/3;
+}
+
+span:hover + div {
+  display: block;
+}
+
+.rotate_image {
+  transform: rotate(270deg);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  background-color: rgb(131, 191, 237);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+/*h1 {
+  color: black;
+  margin-left: 20px;
+  font-size: 40px;
+}
+*/ ;
