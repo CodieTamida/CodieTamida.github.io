@@ -13,8 +13,10 @@ header {
   text-align: center;
   font-size: 50px;
 }
-div {
-  background-image: url("PR_recipe.txt");
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
 }
 
 h1 {
@@ -58,7 +60,7 @@ span:hover + div {
 .rotate_image {
   transform: rotate(270deg);
 }
-ul {
+.sidebar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -71,19 +73,33 @@ ul {
   flex-wrap: wrap;
 }
 
-li a {
-  display: flex;
+.sidebar a {
+  display: block;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
   border-bottom: 1px solid #000;
   border-right: 1px solid black;
-  flex-wrap: wrap;
 }
 
-li a:hover {
+.sidebar a:hover {
   background-color: #555;
   color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+    justify-content: center;
+  }
+  div.content {
+    margin-left: 0;
+  }
 }
 
 /*
@@ -118,4 +134,4 @@ h1 {
   margin-left: 20px;
   font-size: 40px;
 }
-*/ ;
+*/
