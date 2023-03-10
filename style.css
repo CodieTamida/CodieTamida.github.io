@@ -28,7 +28,7 @@ h1 {
   align-items: center;
   justify-content: center;
   justify-content: space-around;
-  /*flex-wrap: wrap;*/
+  flex-wrap: wrap;
 }
 
 [flex-child] {
@@ -86,7 +86,34 @@ li a:hover {
   color: white;
 }
 
-/*h1 {
+/*
+@media screen and (max-width: 600px) {
+  .li a:not(:first-child) {
+    display: none;
+  }
+  .li a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .li.responsive {
+    position: relative;
+  }
+  .li.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+.li.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+h1 {
   color: black;
   margin-left: 20px;
   font-size: 40px;
