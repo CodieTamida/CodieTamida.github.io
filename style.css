@@ -67,6 +67,7 @@ ul {
   height: 100%;
   overflow: auto;
   border: 1px solid black;
+  flex-wrap: wrap;
 }
 
 li a {
