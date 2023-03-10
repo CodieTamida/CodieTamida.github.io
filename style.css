@@ -28,7 +28,7 @@ h1 {
   align-items: center;
   justify-content: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
 }
 
 [flex-child] {
@@ -59,12 +59,13 @@ span:hover + div {
   transform: rotate(270deg);
 }
 ul {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 10%;
   background-color: rgb(131, 191, 237);
-  position: absolute;
+  position: fixed;
   height: 100%;
   overflow: auto;
   border: 1px solid black;
