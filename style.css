@@ -64,7 +64,7 @@ ul {
   padding: 0;
   width: 10%;
   background-color: rgb(131, 191, 237);
-  position: fixed;
+  position: absolute;
   height: 100%;
   overflow: auto;
   border: 1px solid black;
